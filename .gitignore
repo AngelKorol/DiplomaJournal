@@ -1,0 +1,32 @@
+﻿# Dependencies
+node_modules/
+**/node_modules/
+
+# Environment files and secrets
+.env
+.env.*
+!.env.example
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Build output
+dist/
+build/
+coverage/
+
+# Logs
+*.log
+
+# Local editor and OS files
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Local AI coding tool settings
+backend/.agents/
+backend/.claude/
+backend/.cursor/
+backend/.devin/

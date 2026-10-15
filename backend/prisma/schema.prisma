@@ -1,0 +1,39 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+model User {
+  id        Int      @id @default(autoincrement())
+  name      String
+  login     String   @unique
+  password  String
+  role      String
+  groupName String?
+  createdAt DateTime @default(now())
+}
+
+model Subject {
+  id       Int    @id @default(autoincrement())
+  name     String
+  teacher  String
+}
+
+model Grade {
+  id        Int      @id @default(autoincrement())
+  studentId Int
+  subjectId Int
+  value     Int
+  date      DateTime @default(now())
+}
+
+model Attendance {
+  id        Int      @id @default(autoincrement())
+  studentId Int
+  subjectId Int
+  present   Boolean
+  date      DateTime @default(now())
+}

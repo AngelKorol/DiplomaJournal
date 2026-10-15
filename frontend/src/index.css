@@ -109,3 +109,29 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+/* Lavender Dream — интерактивные карточки статистики 💜 */
+
+.stat-card-button {
+  width: 100%;
+  font-family: inherit;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+  appearance: none;
+}
+
+.stat-card-button:hover {
+  border-color: #d7c5f1;
+  background: #fdfbff;
+  box-shadow: 0 12px 30px rgba(113, 84, 173, 0.14);
+  transform: translateY(-3px);
+}
+
+.stat-card-button:focus-visible {
+  outline: 3px solid #b9a0e6;
+  outline-offset: 3px;
+}
+
+.stat-card-button:active {
+  transform: translateY(-1px);
+}
